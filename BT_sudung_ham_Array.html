@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="BT1()">Bài tập1</button>
+<br>
+<br>
+<button onclick="BT2()">Bài tập2</button>
+<p id="kq2">Dãy mới</p>
+<br>
+<br>
+<button onclick="bT3()">Bài tập3</button>
+<p id="kq3">dãy mới bài 3 </p>
+
+</body>
+</html>
+
+<script>
+    //Bài tập 1 thêm ký tự vào mảng
+    function BT1() {
+        let arrayColor = ["Red", "Green", "White", "Black"];
+        document.write(arrayColor.toString() + "<br>");
+        document.write(arrayColor.join() + "<br>");
+        document.write(arrayColor.join("-"));
+    }
+
+
+    //Bài tập 2 thêm dấu - vào giữa 2 số chẵn
+    function BT2() {
+        var myArray = [3, 2, 4, 6, 7, 7, 8, 10, 11, 12, 4];
+        var myArray2 = [];
+        for (var x = 1; x < myArray.length; x++) {
+            if (myArray[x - 1] % 2 === 0 && myArray[x] % 2 === 0) {
+                myArray2.push('-', myArray[x]);
+            } else {
+                myArray2.push(myArray[x]);
+            }
+        }
+        document.getElementById("kq2").innerText = myArray2.join('');
+    }
+
+    //Bài tập3 viết hoa thành viết thường
+    function bT3() {
+        let chuoi = prompt("nhập chuỗi muốn đổi kểu chữ");
+        let myArray = chuoi.toString();
+        let UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let LOWER = "abcdefghijklmnopqrstuvwxyz";
+        let inLaikq = [myArray[0]];
+        for (let i = 0; i < myArray.length; i++) {
+            if (UPPER.indexOf(myArray[i]) !== -1) {
+                inLaikq.push(myArray[i].toLowerCase());
+            } else if (LOWER.indexOf(myArray[i]) !== -1) {
+                inLaikq.push(myArray[i].toUpperCase());
+            } else {
+                inLaikq.push(myArray[i]);
+            }
+        }
+        document.getElementById("kq3").innerText = inLaikq.join('');
+    }
+
+
+</script>
