@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let array = [8, 9, 7, 100, 5, 10, 11, 12, 25, 21];
+    let newarray;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j <= array.length; j++) {
+            if (array[i] < array[j]) {
+                newarray = array[i];
+                array[i] = array[j];
+                array[j] = newarray;
+            }
+        }
+    }
+    for (let t = 0; t < array.length; t++) {
+        document.write(array[t] + ",");
+    }
+
+</script>

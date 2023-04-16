@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let arraySN = [1, 3, 5, 21, 7, 8, 10, 11, 12, 15, 16];
+    let newArray = "";
+    let count = 0;
+    for (let i = 0; i < arraySN.length; i++) {
+        if (arraySN[i] >= 10) {
+            newArray += arraySN[i] + " ";
+            count += 1;
+        }
+    }
+    document.write(newArray + "<br>");
+    document.write("số lượng số nguyên lớn hơn 10 trong hàm là " + count);
+
+
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button onclick="start()">kiểm tra</button>
+    <br>
+    <p id="kQ">kết quả</p>
+
+</body>
+</html>
+
+<script>
+
+
+    function start() {
+        let arraySn = [1,3,5,7,8,9,12,21];
+        let max = arraySn[0];
+        let sum = 0;
+        for (let i = 0; i < arraySn.length; i++) {
+            sum += arraySn[i];
+            if (arraySn[i] > max) {
+                max = arraySn[i];
+            }
+        }
+        document.getElementById("kQ").innerHTML = "giá trị lớn nhất của hàm là " + max + "<br>" + "giá trị trung bình " + (sum /arraySn.length);
+    }
+</script>

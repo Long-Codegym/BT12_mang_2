@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let arraySN = [4, 6, 30, 8, 9, 10, 14, 17, 18, 23];
+    let max = arraySN[0];
+    let add;
+    for (let i = 0; i < arraySN.length; i++) {
+        if (arraySN[i] > max) {
+            max = arraySN[i]
+            add = i;
+        }
+    }
+    document.write("số lớn nhất trong mảng " + max + " vị trí  " + add);
+
+</script>

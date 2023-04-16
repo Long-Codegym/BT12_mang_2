@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number" type="text" placeholder="nhập số nguyên"> <br>
+<button onclick="kiemTra()">kiểm tra</button>
+</body>
+</html>
+
+<script>
+    let array = [4, 7, 8, 11, 13, 6, 5];
+    let kQ;
+
+    function kiemTra() {
+        for (let i = 0; i < array.length; i++) {
+            let v = parseInt(document.getElementById("number").value);
+            let a;
+            a = array[i];
+            if (a === v) {
+                kQ = ("V is in the array");
+                break;
+            } else {
+                kQ = ("V is not in the array");
+            }
+        }
+        document.write(kQ);
+    }
+</script>
