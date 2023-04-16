@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function countDigits(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (/\d/.test(str[i])) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    let str = "Hello123";
+    console.log(countDigits(str));
+</script>

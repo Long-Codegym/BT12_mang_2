@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let array = ["Vla", "-", "dimir", "-", 2, "-", 2, "-", 99];
+    let b = "_";
+    let inLaikq = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === "-") {
+            array[i]= "_";
+            inLaikq.push(array[i]);
+        } else {
+            inLaikq.push(array[i]);
+        }
+    }
+    document.write(inLaikq);
+</script>
